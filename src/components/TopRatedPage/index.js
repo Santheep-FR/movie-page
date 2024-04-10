@@ -48,7 +48,7 @@ class TopRatedPage extends Component {
   renderMoviesList = () => {
     const {moviesList} = this.state
     return (
-      <div>
+      <div className="background">
         <ul className="movie-list">
           {moviesList.map(movie => (
             <MoviesCard movieData={movie} key={movie.id} />
