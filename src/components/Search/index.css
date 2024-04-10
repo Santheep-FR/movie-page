@@ -1,0 +1,24 @@
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #909090;
+  width: 70px;
+  border: none;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  margin: 20px;
+  width: 60%;
+  height: 40px;
+}
+
+.load-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
