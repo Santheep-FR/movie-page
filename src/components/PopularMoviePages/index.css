@@ -9,3 +9,9 @@
   overflow-y: auto;
   justify-content: space-evenly;
 }
+
+.background {
+  background-color: grey;
+  height: 100%;
+}
+
