@@ -5,8 +5,8 @@ import './index.css'
 
 class SingleMovieDetailPage extends Component {
   state = {
-    moviesList: {},
-    castList: {},
+    moviesList: [],
+    castList: [],
   }
 
   componentDidMount() {
@@ -66,7 +66,6 @@ class SingleMovieDetailPage extends Component {
     this.setState({
       castList: castData,
     })
-    console.log(castData.castUrl)
   }
 
   render() {
@@ -84,7 +83,7 @@ class SingleMovieDetailPage extends Component {
     return (
       <>
         <div>
-          <div>
+          <div className="upper">
             <div className="banner">
               <div className="left-container">
                 <div className="banner-poster-image">
@@ -105,7 +104,7 @@ class SingleMovieDetailPage extends Component {
               </div>
             </div>
           </div>
-          <div>
+          <div className="cast-column">
             <h1>Cast</h1>
             <div>
               <img src={castUrl} alt="cast" />

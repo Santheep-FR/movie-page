@@ -58,7 +58,15 @@ class Search extends Component {
 
   renderVideosView = () => {
     const {moviesData} = this.state
-    return <MoviesCard moviesData={moviesData} onRetry={this.onRetry} />
+    return (
+      <div className="background">
+        <ul className="movie-list">
+          {moviesData.map(movie => (
+            <MoviesCard movieData={movie} key={movie.id} />
+          ))}
+        </ul>
+      </div>
+    )
   }
 
   renderHomeVideos = () => {
@@ -86,6 +94,7 @@ class Search extends Component {
             onChange={this.onChangeInput}
           />
           <button
+            type="button"
             className="search-icon"
             data-testid="searchButton"
             onClick={this.getSearchResults}

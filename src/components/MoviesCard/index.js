@@ -8,7 +8,7 @@ const MoviesCard = props => {
 
   return (
     <li className="app-item">
-      <Link to={`/:${id}/credits`}>
+      <Link to={`/${id}`}>
         <img src={imageUrl} alt="poster" className="thumbnail" />
       </Link>
       <h1 className="title">{title}</h1>

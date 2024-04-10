@@ -24,8 +24,10 @@ const Header = () => (
           Upcoming
         </Link>
       </li>
+      <li className="link-item">
+        <Search />
+      </li>
     </ul>
-    <Search />
   </nav>
 )
 
